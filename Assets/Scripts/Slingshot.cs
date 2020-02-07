@@ -44,6 +44,7 @@ public class Slingshot : MonoBehaviour
 
         Vector3 mouseDelta = mousePos3D - launchPos;
         float maxMagnitude = this.GetComponent<SphereCollider>().radius;
+        //Review the if statement below
         if(mouseDelta.magnitude > maxMagnitude)
         {
             mouseDelta.Normalize();
@@ -79,5 +80,8 @@ public class Slingshot : MonoBehaviour
         projectile = Instantiate(prefabProjectile) as GameObject;
         projectile.transform.position = launchPos;
         projectile.GetComponent<Rigidbody>().isKinematic = true;
+
+        projectileRigidbody = projectile.GetComponent<Rigidbody>();
+        projectileRigidbody.isKinematic = true;
     }
 }
