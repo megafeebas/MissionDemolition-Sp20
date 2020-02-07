@@ -616,6 +616,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67d739eeabb44af4391833d1e70db188, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cloudSphere: {fileID: 3344460912026021235, guid: 2a29069257b493f498b59aff177fcfa6,
+    type: 3}
+  numSpheresMin: 6
+  numSpheresMax: 10
+  sphereOffsetScale: {x: 5, y: 2, z: 1}
+  sphereScaleRangeX: {x: 4, y: 8}
+  sphereScaleRangeY: {x: 3, y: 4}
+  sphereScaleRangeZ: {x: 2, y: 4}
+  scaleYMin: 2
 --- !u!4 &1596803807
 Transform:
   m_ObjectHideFlags: 0
