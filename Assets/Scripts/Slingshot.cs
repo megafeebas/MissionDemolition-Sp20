@@ -5,8 +5,11 @@ using UnityEngine;
 public class Slingshot : MonoBehaviour
 {
 
-    public GameObject launchPoint;
+    [Header("Set in Inspector")]
     public GameObject prefabProjectile;
+
+    [Header("Set Dynamically")]
+    public GameObject launchPoint;
     public Vector3 launchPos;
     public GameObject projectile;
     public bool aimingMode;
@@ -47,6 +50,6 @@ public class Slingshot : MonoBehaviour
         aimingMode = true;
         projectile = Instantiate(prefabProjectile) as GameObject;
         projectile.transform.position = launchPos;
-        projectile.GetComponent<RigidBody>().isKinematic = true;
+        projectile.GetComponent<Rigidbody>().isKinematic = true;
     }
 }
