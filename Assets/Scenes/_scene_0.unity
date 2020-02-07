@@ -660,6 +660,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1862930478}
   - component: {fileID: 1862930477}
+  - component: {fileID: 1862930479}
   m_Layer: 0
   m_Name: Slingshot
   m_TagString: Untagged
@@ -698,3 +699,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -15, z: 0}
+--- !u!114 &1862930479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862930476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1714a3d03f2b524da3520fb237845b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
