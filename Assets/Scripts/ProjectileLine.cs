@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ProjectLine : MonoBehaviour
+public class ProjectileLine : MonoBehaviour
 {
-    static public ProjectLine S;
+    static public ProjectileLine S;
 
     [Header("Set in Inspector")]
     public float minDist = 0.1f;
@@ -12,15 +12,6 @@ public class ProjectLine : MonoBehaviour
     private LineRenderer line;
     private GameObject _poi;
     private List<Vector3> points;
-
-    static public Vector3 LAUNCH_POS
-    {
-        get
-        {
-            if (S == null) return Vector3.zero;
-            return S.launchPos;
-        }
-    }
 
     void Awake()
     {
@@ -78,7 +69,7 @@ public class ProjectLine : MonoBehaviour
         }
     }
 
-    public Vector3 lastPoint()
+    public Vector3 lastPoint
     {
         get {
             if (points == null) return (Vector3.zero);
