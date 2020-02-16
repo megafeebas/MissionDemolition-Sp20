@@ -59,12 +59,13 @@ public class MissionDemolition : MonoBehaviour
 
     void UpdateGUI()
     {
-        uitLevel.text = "Level: " + (level++) + " of " + levelMax;
+        uitLevel.text = "Level: " + (level+1) + " of " + levelMax;
         uitShots.text = "Shots Taken: " + shotsTaken;
     }
     // Update is called once per frame
     void Update()
     {
+        UpdateGUI();
         if((mode == GameMode.playing) && Goal.goalMet)
         {
             mode = GameMode.levelEnd;
@@ -92,7 +93,7 @@ public class MissionDemolition : MonoBehaviour
         showing = eView;
         switch (showing)
         {
-            case "Show Slinshot":
+            case "Show Slingshot":
                 FollowCam.POI = null;
                 uitButton.text = "Show Castle";
                 break;
