@@ -11,6 +11,8 @@ public enum GameMode
 }
 public class MissionDemolition : MonoBehaviour
 {
+    static private MissionDemolition S;
+
     [Header("Set in Inspector")]
     public Text uitLevel;
     public Text uitShots;
@@ -67,7 +69,7 @@ public class MissionDemolition : MonoBehaviour
         {
             mode = GameMode.levelEnd;
             SwitchView("Show Both");
-            invoke("NextLevel", 2f);
+            Invoke("NextLevel", 2f);
         }
     }
 
